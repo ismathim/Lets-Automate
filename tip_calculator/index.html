@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", intial-scale="1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Quick Tip</title>
+  </head>
+  <body>
+    <main id="container">
+      <h1>Quick Tip</h1>
+
+      <section>
+        <div class="bill">
+          <label for="yourBill">Bill</label>
+          <input type="number" placeholder="Your Bill" id="yourBill" >
+        </div>
+        <div >
+          <div class="space-between">
+            <label for="">Select Tip</label>
+            <span id="tipPercent"></span>
+          </div>
+          <input type="range" id="tipInput" value="0" class="range">
+        </div>
+
+        <div class="space-between">
+          <span>Tip</span>
+          <span id="tipValue"></span>
+        </div>
+        <hr>
+        <div class="space-between total">
+            <span>Total</span>
+            <span id="totalWithTip"></span>
+        </div>
+
+      </section>
+
+      <section>
+        <div class="">
+          <div class="space-between">
+              <label for="splitInput">Split</label>
+              <span id="splitValue"></span>
+          </div>
+
+          <input type="range" min="1" max="10" value="1" id="splitInput" class="range"/>
+
+        </div>
+        <div class="space-between">
+          <span>Bill each</span>
+          <span id="billEach"></span>
+
+        </div>
+        <div class="space-between">
+          <span>Tip each</span>
+          <span id="tipEach"></span>
+        </div>
+      </section>
+
+    </main>
+    <script type="text/javascript">
+      function formatMoney(value){
+        value =Math.ceil(value*100)/100;
+        value=value.toFixed(2);
+        return "$ "+value;
+      }
+
+      function formatPerson(value){
+        if (value==="1") return value+" Person";
+        return value+" People";
+      }
+
+      function update(){
+      let bill=  Number(document.getElementById('yourBill').value);
+      let tipPercent=  document.getElementById('tipInput').value;
+      let split=  document.getElementById('splitInput').value;
+
+      let tipValue= bill*(tipPercent/100);
+      let tipEach=tipValue/split;
+
+      let newBillEach= (bill+tipValue)/split;
+
+      document.getElementById("tipPercent").innerHTML=tipPercent+"%";
+      document.getElementById("tipValue").innerHTML=formatMoney(tipValue);
+      document.getElementById("totalWithTip").innerHTML=formatMoney(bill+tipValue);
+      document.getElementById("splitValue").innerHTML=formatPerson(split);
+      document.getElementById("billEach").innerHTML=formatMoney(newBillEach);
+      document.getElementById("tipEach").innerHTML=formatMoney(tipEach);
+      console.log(tipValue);
+
+      }
+      let container= document.getElementById("container");
+      container.addEventListener("input",update);
+    </script>
+  </body>
+</html>
