@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", intial-scale="1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css">
+		<script defer="" src="https://use.fontawesome.com/releases/v5.1.1/js/fontawesome.js" integrity="sha384-NY6PHjYLP2f+gL3uaVfqUZImmw71ArL9+Roi9o+I4+RBqArA2CfW1sJ1wkABFfPe" crossorigin="anonymous"></script>
+		<script defer="" src="https://use.fontawesome.com/releases/v5.1.1/js/solid.js" integrity="sha384-GXi56ipjsBwAe6v5X4xSrVNXGOmpdJYZEEh/0/GqJ3JTHsfDsF8v0YQvZCJYAiGu" crossorigin="anonymous"></script>
+		<script defer="" src="https://use.fontawesome.com/releases/v5.1.1/js/brands.js" integrity="sha384-0inRy4HkP0hJ038ZyfQ4vLl+F4POKbqnaUB6ewmU4dWP0ki8Q27A0VFiVRIpscvL" crossorigin="anonymous"></script>
+
+    <title>CGPA Calculator</title>
+</head>
+<body>
+	<main id="container">
+      <h1>CGPA Calculator<br>(Single Semester)</h1>
+
+
+      <section>
+				<div class="">
+          <div class="space-between">
+              <label for="splitInput">Number of Subjects:</label>
+              <span id="splitValue"></span>
+          </div>
+
+          <input type="range" min="1" max="8" value="1" id="splitInput" class="range"/>
+
+        </div>
+				<!--Subject 1-->
+				<center><p>•••</p></center>
+        <div class="bill">
+          <label for="yourBill_1">Subject 1: Units</label>
+          <input type="number" placeholder="Enter your Credit Score" id="yourBill_1">
+        </div>
+        <div >
+          <div class="space-between">
+            <label for="">Grade Points</label>
+            <span id="tipPercent_1"></span>
+          </div>
+          <input type="range" id="tipInput_1" min="1" max="10" value="1" class="range">
+        </div>
+
+				<div class="space-between total">
+            <span>Total</span>
+            <span id="totalWithTip_1"></span>
+        </div>
+				<!--Subject 2-->
+				<center><p>•••</p></center>
+        <div class="bill">
+          <label for="yourBill_2">Subject 2: Units</label>
+          <input type="number" placeholder="Enter your Credit Score" id="yourBill_2">
+        </div>
+        <div >
+          <div class="space-between">
+            <label for="">Grade Points</label>
+            <span id="tipPercent_2"></span>
+          </div>
+          <input type="range" id="tipInput_2" min="1" max="10" value="1" class="range">
+        </div>
+				<div class="space-between total">
+            <span>Total</span>
+            <span id="totalWithTip_2"></span>
+        </div>
+				<!--Subject 3-->
+				<center><p>•••</p></center>
+        <div class="bill">
+          <label for="yourBill_3">Subject 3: Units</label>
+          <input type="number" placeholder="Enter your Credit Score" id="yourBill_3">
+        </div>
+        <div >
+          <div class="space-between">
+            <label for="">Grade Points</label>
+            <span id="tipPercent_3"></span>
+          </div>
+          <input type="range" id="tipInput_3" min="1" max="10" value="1" class="range">
+        </div>
+				<div class="space-between total">
+            <span>Total</span>
+            <span id="totalWithTip_3"></span>
+        </div>
+
+				<!--Subject 4-->
+				<center><p>•••</p></center>
+        <div class="bill">
+          <label for="yourBill_4">Subject 4: Units</label>
+          <input type="number" placeholder="Enter your Credit Score" id="yourBill_4">
+        </div>
+        <div >
+          <div class="space-between">
+            <label for="">Grade Points</label>
+            <span id="tipPercent_4"></span>
+          </div>
+          <input type="range" id="tipInput_4" min="1" max="10" value="1" class="range">
+        </div>
+				<div class="space-between total">
+            <span>Total</span>
+            <span id="totalWithTip_4"></span>
+        </div>
+				<!--Subject 5-->
+				<center><p>•••</p></center>
+        <div class="bill">
+          <label for="yourBill_5">Subject 5: Units</label>
+          <input type="number" placeholder="Enter your Credit Score" id="yourBill_5">
+        </div>
+        <div >
+          <div class="space-between">
+            <label for="">Grade Points</label>
+            <span id="tipPercent_5"></span>
+          </div>
+          <input type="range" id="tipInput_5" min="1" max="10" value="1" class="range">
+        </div>
+				<div class="space-between total">
+            <span>Total</span>
+            <span id="totalWithTip_5"></span>
+        </div>
+				<!--Subject 6-->
+				<center><p>•••</p></center>
+        <div class="bill">
+          <label for="yourBill_6">Subject 6: Units</label>
+          <input type="number" placeholder="Enter your Credit Score" id="yourBill_6">
+        </div>
+        <div >
+          <div class="space-between">
+            <label for="">Grade Points</label>
+            <span id="tipPercent_6"></span>
+          </div>
+          <input type="range" id="tipInput_6" min="1" max="10" value="1" class="range">
+        </div>
+				<div class="space-between total">
+            <span>Total</span>
+            <span id="totalWithTip_6"></span>
+        </div>
+				<!--Subject 7-->
+				<center><p>•••</p></center>
+				<div class="bill">
+					<label for="yourBill_7">Subject 7: Units</label>
+					<input type="number" placeholder="Enter your Credit Score" id="yourBill_7">
+				</div>
+				<div >
+					<div class="space-between">
+						<label for="">Grade Points</label>
+						<span id="tipPercent_7"></span>
+					</div>
+					<input type="range" id="tipInput_7" min="1" max="10" value="1" class="range">
+				</div>
+				<div class="space-between total">
+            <span>Total</span>
+            <span id="totalWithTip_7"></span>
+        </div>
+				<!--Subject 8-->
+				<center><p>•••</p></center>
+        <div class="bill">
+
+          <label for="yourBill_8">Subject 8: Units</label>
+          <input type="number" placeholder="Enter your Credit Score" id="yourBill_8">
+        </div>
+        <div >
+          <div class="space-between">
+            <label for="">Grade Points</label>
+            <span id="tipPercent_8"></span>
+          </div>
+          <input type="range" id="tipInput_8" min="1" max="10" value="1" class="range">
+        </div>
+				<div class="space-between total">
+            <span>Total</span>
+            <span id="totalWithTip_8"></span>
+        </div>
+        <div class="space-between total_final">
+            <span>Total: </span>
+            <span id="totalWithTip"></span>
+        </div>
+
+      </section>
+
+			<h3>Built with <i class="fas fa-heart"></i> by <a href="https://twitter.com/ismathim" target="_blank">Ismath </a><br>Design Inspiration from <a href="https://fun-javascript-projects.com">Chris Dixon</a></h3>
+    </main>
+
+		<script src="cgpa.js">
+			//
+			// function formatCGPA(value){
+			// 	value =value*100/100;
+      //   value=value.toFixed(2);
+      //   return "CGPA... "+value;
+			// }
+      // function update(){
+			// 		let subject=Number(document.getElementById("splitInput").value);
+			//
+			// 		let bill_1= Number(document.getElementById("yourBill_1").value);
+			// 		let grade_1= document.getElementById("tipInput_1").value;
+			// 		let total_1=bill_1*grade_1;
+			//
+			// 		let bill_2= Number(document.getElementById("yourBill_2").value);
+			// 		let grade_2= document.getElementById("tipInput_2").value;
+			// 		let total_2=bill_2*grade_2;
+			//
+			// 		let bill_3= Number(document.getElementById("yourBill_3").value);
+			// 		let grade_3= document.getElementById("tipInput_3").value;
+			// 		let total_3=bill_1*grade_3;
+			//
+			// 		let bill_4= Number(document.getElementById("yourBill_4").value);
+			// 		let grade_4= document.getElementById("tipInput_4").value;
+			// 		let total_4=bill_1*grade_4;
+			//
+			// 		let bill_5= Number(document.getElementById("yourBill_5").value);
+			// 		let grade_5= document.getElementById("tipInput_5").value;
+			// 		let total_5=bill_5*grade_5;
+			//
+			// 		let bill_6= Number(document.getElementById("yourBill_6").value);
+			// 		let grade_6= document.getElementById("tipInput_6").value;
+			// 		let total_6=bill_6*grade_6;
+			//
+			// 		let bill_7= Number(document.getElementById("yourBill_7").value);
+			// 		let grade_7= document.getElementById("tipInput_7").value;
+			// 		let total_7=bill_7*grade_7;
+			//
+			// 		let bill_8= Number(document.getElementById("yourBill_8").value);
+			// 		let grade_8= document.getElementById("tipInput_8").value;
+			// 		let total_8=bill_8*grade_8;
+			// 		let total_bill=(bill_1+bill_2+bill_3+bill_4+bill_5+bill_6+bill_7+bill_8);
+			// 		let total=((bill_1*grade_1)+(bill_2*grade_2)+(bill_3*grade_3)+(bill_4*grade_4)+(bill_5*grade_5)+(bill_6*grade_6)+(bill_7*grade_7)+(bill_8*grade_8))/(total_bill);
+			//
+			//
+			// 		document.getElementById("totalWithTip_1").innerHTML=total_1;
+			// 		document.getElementById("tipPercent_1").innerHTML=grade_1+" Point";
+			//
+			// 		document.getElementById("totalWithTip_2").innerHTML=total_2;
+			// 		document.getElementById("tipPercent_2").innerHTML=grade_2+" Point";
+			//
+			// 		document.getElementById("totalWithTip_3").innerHTML=total_3;
+			// 		document.getElementById("tipPercent_3").innerHTML=grade_3+" Point";
+			//
+			// 		document.getElementById("totalWithTip_4").innerHTML=total_4;
+			// 		document.getElementById("tipPercent_4").innerHTML=grade_4+" Point";
+			//
+			// 		document.getElementById("totalWithTip_5").innerHTML=total_5;
+			// 		document.getElementById("tipPercent_5").innerHTML=grade_5+" Point";
+			//
+			// 		document.getElementById("totalWithTip_6").innerHTML=total_6;
+			// 		document.getElementById("tipPercent_6").innerHTML=grade_6+" Point";
+			//
+			// 		document.getElementById("totalWithTip_7").innerHTML=total_7;
+			// 		document.getElementById("tipPercent_7").innerHTML=grade_7+" Point";
+			//
+			// 		document.getElementById("totalWithTip_8").innerHTML=total_8;
+			// 		document.getElementById("tipPercent_8").innerHTML=grade_8+" Point";
+			//
+			// 		document.getElementById("splitValue").innerHTML=subject;
+			// 		document.getElementById("totalWithTip").innerHTML=formatCGPA(total);
+			// 	  console.log(bill_1, grade_1);
+			// 	}
+			//
+			//
+      // let container= document.getElementById("container");
+      // container.addEventListener("input",update);
+
+    </script>
+</body>
+</html>
